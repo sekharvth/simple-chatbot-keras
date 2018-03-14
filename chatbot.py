@@ -100,7 +100,7 @@ with open('dictionary.pkl', 'wb') as f:
 context = np.load('context_indexes.npy')
 final_target = np.load('target_indexes.npy')
 with open('dictionary.pkl', 'rb') as f:
-    word_to_index = pickle.load(f)'
+    word_to_index = pickle.load(f)
 
 len(word_to_index)
 
@@ -207,4 +207,4 @@ model = Model([input_context, input_target], output)
 
 model.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy'])
 
-model.fit([context_1, final_target_1], outs, epochs = 2, batch_size = 128)
+model.fit([context_1, final_target_1], outs, epochs = 100, batch_size = 128)
