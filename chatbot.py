@@ -45,7 +45,7 @@ for pos,i in enumerate(target):
     target[pos] = re.sub('([\w]+)([,;.?!#&-\'\"-]+)([\w]+)?', r'\1 \2 \3', i)
     if len(i.split()) > maxlen:
         target[pos] = (' ').join(target[pos].split()[:maxlen])
-        if '.' in target[pos]:
+        if '.' in target[pos]: 
             ind = target[pos].index('.')
             target[pos] = target[pos][:ind+1]
         if '?' in target[pos]:
