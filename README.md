@@ -1,4 +1,4 @@
-# simple-chatbot-keras
+# Chatbot using Keras
 Design and build a simple chatbot using data from the Cornell Movie Dialogues corpus, using Keras
 
 Most of the ideas used in this model comes from the original seq2seq model made by the Keras team. It also serves as a brillant tutorial on the working of the architecture, and how it is developed: 
